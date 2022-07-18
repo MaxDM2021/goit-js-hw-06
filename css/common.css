@@ -23,10 +23,30 @@ button {
   cursor: pointer;
 }
 
+.js-gallary {
+  display: flex;
+ flex-wrap: nowrap;
+
+}
+
+.image {
+  width: 400px;
+  height: 200px;
+  padding: 0;
+  margin: 10px;
+  list-style: none;
+}
+
+.img__item {
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+}
+
 
 .image__item{
-  display: flex;
+
   border-radius: 4px;
   list-style-type: none;
-  justify-content: space-between;
+
 }

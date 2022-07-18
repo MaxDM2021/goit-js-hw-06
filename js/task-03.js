@@ -18,18 +18,16 @@ const images = [
 
 const galaryImages = galaryArray => {
   return galaryArray.map(image => {
-    const liEl = document.createElement('li');
-    const imageEL = liEl.createElement('img');
-    imageEL.setAttibute('src', `${image[i].url}`)
-    imageEL.setAttibute('alt', `${image[i].alt}`)
-    return liEl ;
-  })
+    return `<li class="image"><img class="img__item" src="${image.url}" alt="${image.alt}" width=200px height=100px ></li>` ;
+  }).join('')
 }
 
 const elements = galaryImages(images);
 const galaryEL = document.querySelector('.gallery');
-galaryEL.insertAdjacentHTML("beforeBegin", [...elements]);
+galaryEL.classList.add('js-galjary') 
+galaryEL.insertAdjacentHTML("afterBegin", elements);
 
 console.log(galaryEL);
+
 
 
