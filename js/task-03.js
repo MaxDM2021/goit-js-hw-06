@@ -24,7 +24,7 @@ const galaryImages = galaryArray => {
 
 const elements = galaryImages(images);
 const galaryEL = document.querySelector('.gallery');
-galaryEL.classList.add('js-galjary') 
+galaryEL.classList.add('js-galary') 
 galaryEL.insertAdjacentHTML("afterBegin", elements);
 
 console.log(galaryEL);

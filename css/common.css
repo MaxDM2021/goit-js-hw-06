@@ -23,11 +23,7 @@ button {
   cursor: pointer;
 }
 
-.js-gallary {
-  display: flex;
- flex-wrap: nowrap;
-
-}
+/* ====Task-03==== */
 
 .image {
   width: 400px;
@@ -43,10 +39,9 @@ button {
   border-radius: 10px;
 }
 
-
-.image__item{
-
-  border-radius: 4px;
-  list-style-type: none;
-
+.js-galary {
+  display: flex;
+  flex-wrap: wrap;
 }
+
+/* ====Task-03-END==== */
